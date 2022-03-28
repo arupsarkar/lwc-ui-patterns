@@ -2,16 +2,20 @@
 <template>
     <button onclick={updateComponents}>Update Layout</button>
         <template for:each={obj} for:item="comp">
-            <div key={comp.requiredKey}>
-                {comp.requiredKey} {comp.attribute1}  {comp.attribute2} 
+            <div key={comp.componentIndex}>
+                {comp.componentIndex} {comp.attribute1}  {comp.attribute2} 
                 <c-header-component 
                     comp-obj={comp.attribute1}
                     comp-visible={comp.attribute2}
                 ></c-header-component>
+                <c-contact-component 
+                    comp-obj={comp.attribute1}
+                    comp-visible={comp.attribute2}
+                ></c-contact-component>                
                 <c-footer-component 
                     comp-obj={comp.attribute1}
                     comp-visible={comp.attribute2}
-                ></c-footer-component>                
+                ></c-footer-component>
             </div>
         </template>
     </template>
