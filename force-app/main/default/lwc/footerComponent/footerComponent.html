@@ -1,0 +1,25 @@
+<template>
+    <div class="c-container">
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <template if:true={_isVisible}>
+                    <lightning-card>
+                        <h3 slot="title">
+                            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                            Footer
+                        </h3>
+                        <div slot="footer">
+                                <lightning-badge label="Tag1"></lightning-badge>
+                                <lightning-badge label="Tag2"></lightning-badge>
+                                <lightning-badge label="Tag3"></lightning-badge>
+                        </div>
+                        <p class="slds-var-p-horizontal_small">Is footer component visible ? {_isVisible}</p>
+                    </lightning-card>
+                </template>
+
+
+            </lightning-layout-item>
+        </lightning-layout>
+
+    </div>
+</template>

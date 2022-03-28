@@ -1,0 +1,63 @@
+.my-slds-card {
+    background-color: var(--slds-c-card-color-background, #0000FF);    
+}
+
+.my-slds-text-heading_large {
+    background-color: var(--slds-c-text-color-background, #ffffff);        
+}
+
+.my-slds-text-heading_red {
+  background-color: var(--slds-text-color_default, #ff4400);  
+}
+
+.my-slds-text-heading_green {
+  background-color: var(--slds-text-color_default, #89f79f);  
+}
+
+.my-slds-text-column_header_blue {
+  color: var(--slds-text-color_default, #6495ED);  
+  font-size: var(--FONT_SIZE, 12px);
+  font-family: var(--FONT_STYLE, courier); 
+  font-weight: var(--FONT_WEIGHT, 100)
+}
+
+.my-slds-text-first-column_header_gray {
+  color: var(--slds-text-color_default, #999999);  
+  font-size: var(--FONT_SIZE, 12px);
+  font-family: var(--FONT_STYLE, courier); 
+  font-weight: var(--FONT_WEIGHT, 100)
+}
+
+.my-slds-text-first-column_header_white {
+  color: var(--slds-text-color_default, #FFFFFF);  
+  font-size: var(--FONT_SIZE, 12px);
+  font-family: var(--FONT_STYLE, courier); 
+  font-weight: var(--FONT_WEIGHT, 100)
+}
+
+.box {
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 15px;
+    border: 0px solid black;
+    clear: both;
+  }
+  
+  .red {
+    background-color: #ff726f;
+  }
+  
+  .green {
+    background-color: #90EE90;
+  }
+  
+  .yellow {
+    background-color: #FFFF99;
+  }
+
+  .gray {
+    background-color: #D3D3D3;
+  }
+
+  

@@ -1,0 +1,4 @@
+.c-container {
+    border: var(--lwc-borderWidthThin, 1px) solid #d8dde6;
+    margin: 10px var(--lwc-spacingNone, 0) var(--lwc-squareIconUtilityMedium, 1.25rem) var(--lwc-spacingNone, 0);
+}
