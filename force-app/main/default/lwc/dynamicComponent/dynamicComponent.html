@@ -1,6 +1,5 @@
-<!-- sldsValidatorIgnore -->
 <template>
-    <button onclick={updateComponents}>Update Layout</button>
+    <lightning-button variant="brand-outline" label="Update layout" title="Primary action with lighter look" onclick={updateComponents} class="slds-var-m-left_x-small"></lightning-button>    
         <template for:each={obj} for:item="comp">
             <div key={comp.componentIndex}>
                 {comp.componentIndex} {comp.attribute1}  {comp.attribute2} 

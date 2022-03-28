@@ -39,7 +39,7 @@ export default class DynamicComponent extends LightningElement {
                     {
                         componentIndex: 2,
                         attribute1: 'footer',
-                        attribute2: false
+                        attribute2: true
                     }
                 ]
             }
