@@ -1,5 +1,5 @@
 <template>
-    <lightning-button variant="brand-outline" label="Update layout" title="Primary action with lighter look" onclick={updateComponents} class="slds-var-m-left_x-small"></lightning-button>    
+    <lightning-button variant="brand-outline" label="Update layout" title="Primary action with lighter look" onclick={mutateComponents} class="slds-var-m-left_x-small"></lightning-button>    
         <template for:each={obj} for:item="comp">
             <div key={comp.componentIndex}>
                 {comp.componentIndex} {comp.attribute1}  {comp.attribute2} 
@@ -19,28 +19,3 @@
         </template>
     </template>
 </template>
-<!-- Configuration of XML attributes -->
-<!-- https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_config_for_app_builder -->
-<!-- https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reference_configuration_tags -->
-
-<!--
-
-https://developer.salesforce.com/docs/component-library/documentation/en/lwc/reference_lifecycle_hooks    
-https://salesforce.stackexchange.com/questions/334634/lwc-setting-properties-in-connectedcallback
-https://webcomponents.dev/edit/ml8fb93ip4HhUuLE9TjN/src/app.html?p=stories 
-https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_light_dom
-https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.reactivity_fields
-
-
-
-https://www.salesforcetroop.com/lwc/passing-array-data-parent-to-child-component
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
-https://jayakrishnasfdc.wordpress.com/2020/12/05/iteration-rendering-loop-the-list-in-lwc/
-https://salesforce.stackexchange.com/questions/250443/using-arithmetic-comparison-in-iftrue-statement-in-lightning-web-component
-https://www.forcetrails.com/2021/08/publish-lwc-events-to-lightning-app-builder.html
-https://salesforce.stackexchange.com/questions/243876/dynamic-component-creation-in-lightning-web-components
-https://medium.com/inside-the-salesforce-ecosystem/getting-started-with-salesforce-lightning-web-runtime-lwr-2a1c33fc3909
-https://niksdeveloper.com/salesforce/loop-through-list-in-lwc-and-javascript/#:~:text=To%20loop%20through%20List%20in%20LWC%2C%20we%20can%20make%20use,the%20elements%20in%20the%20Array.&text=To%20use%20iterator%3Ait%2C%20we,the%20Array%20to%20iterator%3Ait.
-https://blog.salesforcecasts.com/shadow-dom-in-lwc/
-
--->

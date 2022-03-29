@@ -1,16 +1,14 @@
 <template>
-    <div class="c-container">
         <lightning-layout>
-            <lightning-layout-item padding="around-small">
+            <lightning-layout-item padding="around_xxx-small">
                 <template if:true={_isVisible}>
                     <div>
                         <lightning-card  variant="Narrow"  title="Header" icon-name="standard:account">
                             <p class="slds-var-p-horizontal_small">Is header component visible ? {_isVisible}</p>
-                            <p slot="footer">Card Header</p>
+                            <!-- <p slot="footer">Card Header</p> -->
                         </lightning-card>
                     </div>
                 </template>
             </lightning-layout-item>
         </lightning-layout>
-    </div>
 </template>

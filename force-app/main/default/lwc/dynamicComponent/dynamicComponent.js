@@ -12,7 +12,7 @@ export default class DynamicComponent extends LightningElement {
         return this.obj
     }
 
-    updateComponents() {
+    mutateComponents() {
         for(let i = 0; i < 3; i++) {
             console.log(i)
             if(i==0) {

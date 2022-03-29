@@ -1,22 +1,21 @@
 <template>
-    <div class="c-container">
 
         <lightning-layout>
-            <lightning-layout-item padding="around-small">
+            <lightning-layout-item padding="around_xxx-small">
                 <template if:true={_isVisible}>
-
-                    <lightning-card title="Contacts" icon-name="custom:custom14">
-                        <ul class="slds-var-m-around_medium">
-                            <template for:each={contacts} for:item="contact">
-                                <li key={contact.Id}>
-                                    {contact.Name}, {contact.Title}
-                                </li>
-                            </template>
-                        </ul>
-                    </lightning-card>
-
+                        <lightning-card variant="Narrow" title="Contacts" icon-name="custom:custom14">
+                            <ul class="slds-var-m-around_medium">
+                                <template for:each={contacts} for:item="contact">
+                                    <li key={contact.Id}>
+                                        <p class="slds-var-p-horizontal_small">
+                                            {contact.Name}, {contact.Title}
+                                        </p>                                        
+                                        
+                                    </li>
+                                </template>
+                            </ul>
+                        </lightning-card>
                 </template>                
             </lightning-layout-item>
         </lightning-layout>
-    </div>
 </template>
