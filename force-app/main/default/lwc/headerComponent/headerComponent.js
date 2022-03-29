@@ -1,10 +1,11 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api, track } from 'lwc';
 
 export default class HeaderComponent extends LightningElement {
     
     _compObj
     _compVisible
     _isVisible
+    @track obj = []
 
     @api
     set compObj(_value) {
@@ -40,6 +41,7 @@ export default class HeaderComponent extends LightningElement {
         if(this._compVisible && this._compObj === 'header') {
             this._isVisible = true
         }
+        this.mutateComponents()        
         console.log('---> connectedCallBack', 'end')        
     }
 
@@ -47,4 +49,41 @@ export default class HeaderComponent extends LightningElement {
         console.log('---> renderedCallback', 'start')
         console.log('---> renderedCallback', 'end')                
     }
+
+
+    mutateComponents() {
+        for(let i = 0; i < 3; i++) {
+            console.log(i)
+            if(i==0) {
+                this.obj = [
+                    ...this.obj,
+                    {
+                        componentIndex: 0,
+                        attribute1: 'subheader-1',
+                        attribute2: true
+                    }
+                ]
+            }else if(i == 1) {
+                this.obj = [
+                    ...this.obj,
+                    {
+                        componentIndex: 1,
+                        attribute1: 'subheader-2',
+                        attribute2: true
+                    }
+                ]
+            }else if(i == 2) {
+                this.obj = [
+                    ...this.obj,
+                    {
+                        componentIndex: 2,
+                        attribute1: 'subheader-3',
+                        attribute2: true
+                    }
+                ]
+            }
+
+        }
+        return this.obj
+    }    
 }

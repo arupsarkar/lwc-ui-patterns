@@ -5,9 +5,18 @@
                     <div>
                         <lightning-card  variant="Narrow"  title="Header" icon-name="standard:account">
                             <p class="slds-var-p-horizontal_small">Is header component visible ? {_isVisible}</p>
-                            <!-- <p slot="footer">Card Header</p> -->
+                                <template for:each={obj} for:item="comp">
+                                    <div class="slds-var-p-horizontal_small" key={comp.componentIndex}>
+                                        <c-sub-header-component 
+                                            comp-obj={comp.attribute1}
+                                            comp-visible={comp.attribute2}
+                                        ></c-sub-header-component>
+                                    </div>
+                                </template>                            
                         </lightning-card>
+                        
                     </div>
+                    
                 </template>
             </lightning-layout-item>
         </lightning-layout>
